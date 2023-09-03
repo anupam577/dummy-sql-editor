@@ -21,7 +21,7 @@ function Header(props) {
   return (
     <Navbar className="shadow p-3">
       <Container fluid>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand >
           <AtlanLogo width={100} />
         </Navbar.Brand>
         <Navbar.Text>
