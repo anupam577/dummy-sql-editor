@@ -28,6 +28,7 @@ function QueryTabs(props) {
           }}
           onClick={(e) => {
             // If it's not stopped here, the active key will be changed yet again.
+
             e.stopPropagation();
             const [newTabs, newActiveKey] = closeTab(tab.eventKey, props.tabs);
             props.setTabs(newTabs);
@@ -48,7 +49,7 @@ function QueryTabs(props) {
     </Tab.Pane>
   ));
 
-  // If there are no open tabs currently.
+  // If there are no open tabs currently or beggning of the website.
   if (props.tabs.length === 0) {
     return (
       <Container className="h-100">
