@@ -45,11 +45,13 @@ function Header(props) {
           </Button>
           <Button
             variant={"outline-primary"}
+
             className="d-lg-none"
             onClick={() => {
               props.setSidebarOpen(!props.sidebarOpen);
             }}
             aria-controls="sidebar"
+            
             aria-expanded={props.sidebarOpen}
           >
             <FontAwesomeIcon icon={faBars} />
