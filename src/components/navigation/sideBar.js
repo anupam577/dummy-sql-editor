@@ -13,6 +13,7 @@ import { closeTab, getPropTypes, openNewTab } from "../../utils";
 
 /**
  * The component to display the side bar.
+ * All are comments
  * @param props
  * @returns {JSX.Element}
  * @constructor

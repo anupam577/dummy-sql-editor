@@ -60,6 +60,7 @@ function useFile(fileName) {
     }
   }, [fetchUrl, fileName, inProduction]);
 
+  
   return {
     error,
     isLoaded,

@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <Header
-      
+
         activeKey={activeKey}
         setActiveKey={setActiveKey}
         tabs={tabs}
@@ -29,6 +29,7 @@ function App() {
         sidebarOpen={sidebarOpen}
         setSidebarOpen={setSidebarOpen}
       />
+      
       <Collapse in={sidebarOpen}>
         <div>
           <SideBar

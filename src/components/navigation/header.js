@@ -11,6 +11,8 @@ import { ReactComponent as AtlanLogo } from "../../logo.svg";
 
 /**
  * The React component to display the header.
+ * All are comments
+ * 
  * @param props
  * @returns {JSX.Element}
  * @constructor
@@ -31,6 +33,7 @@ function Header(props) {
                   title: `Query ${props.queryCount}`,
                   entries: [],
                 },
+
                 props.tabs,
                 props.setTabs,
                 props.setActiveKey
@@ -41,6 +44,7 @@ function Header(props) {
               marginRight: "1rem",
             }}
           >
+
             <FontAwesomeIcon icon={faPlus} /> New Query
           </Button>
           <Button
@@ -51,7 +55,7 @@ function Header(props) {
               props.setSidebarOpen(!props.sidebarOpen);
             }}
             aria-controls="sidebar"
-            
+
             aria-expanded={props.sidebarOpen}
           >
             <FontAwesomeIcon icon={faBars} />
