@@ -19,7 +19,7 @@ function QuerySpace(props) {
         value={props.defaultQuery}
         options={{
           mode: "sql",
-          theme: "cobalt",
+          theme: "abyss",
           lineNumbers: true,
         }}
       />

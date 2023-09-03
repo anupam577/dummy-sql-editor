@@ -5,7 +5,8 @@ import BaseTable from "./index";
 import { getFieldDetails, getPropTypes } from "../../utils";
 
 /**
- * The table with the results of the columns of the run query operation. Uses the BaseTable component to display the
+ * The table with the results of the columns of the run query operation. 
+ * Uses the BaseTable component to display the
  * results in a table.
  * @param props
  * @returns {JSX.Element}
@@ -13,6 +14,7 @@ import { getFieldDetails, getPropTypes } from "../../utils";
  */
 function ColumnsTable(props) {
   const { result, isLoaded, error } = props;
+
   const data = useMemo(() => {
     if (result.length === 0) {
       return [];
